@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shahidul-shabuz.github.io/sitemap.xml
