@@ -1,192 +1,46 @@
-# 🌐 Personal Academic Website
+# shahidul-shabuz.github.io
 
-[![Website](https://img.shields.io/badge/Website-Live-success?style=for-the-badge)](https://shahidul-shabuz.github.io/)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)]
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]
+Personal academic website of Md Shahidul Islam Shabuz — Assistant Professor,
+Department of Computer Science and Engineering, Rajshahi Science and Technology
+University.
 
-This repository contains the source code for my personal academic website, hosted using **GitHub Pages**.
+Live at <https://shahidul-shabuz.github.io/>
 
-🔗 **Live Website:** https://shahidul-shabuz.github.io/
-
----
-
-# 👨‍💻 About Me
-
-**Md Shahidul Islam Shabuz**
-
-Assistant Professor  
-Department of Computer Science and Engineering (CSE)  
-Rajshahi Science and Technology University (RSTU), Bangladesh
-
-MSc Engineering Student  
-Dhaka University of Engineering and Technology (DUET)
-
-My research focuses on developing reliable and explainable Artificial Intelligence systems for real-world applications. My primary research interests include Machine Learning, Explainable AI (XAI), Computer Vision, Deep Learning, Natural Language Processing, and Intelligent Transportation Systems.
-
----
-
-# 🔬 Research Interests
-
-- Machine Learning
-- Deep Learning
-- Explainable Artificial Intelligence (XAI)
-- Computer Vision
-- Natural Language Processing (NLP)
-- Intelligent Transportation Systems
-- Medical Image Analysis
-
----
-
-# 🧠 Technical Expertise
-
-### Machine Learning
-- Scikit-learn
-- Model Evaluation
-- Feature Engineering
-- Classification & Regression
-
-### Deep Learning
-- Convolutional Neural Networks (CNN)
-- Recurrent Neural Networks (RNN)
-- Long Short-Term Memory (LSTM)
-- Transfer Learning
-
-### Natural Language Processing
-- Encoder–Decoder Architecture
-- Attention Mechanism
-- Transformer Architecture
-- Sequence Modeling
-
-### Programming Languages
-- Python
-- C
-- C++
-- Java
-- MATLAB
-
-### Web Technologies
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
-
----
-
-# 📄 Website Sections
-
-The website includes:
-
-- Home
-- About
-- Research
-- Publications
-- Teaching
-- Student Supervision
-- Leadership
-- News
-- Academic CV
-- Contact
-
----
-
-# 📚 Selected Publication
-
-**Accepted Journal Article**
-
-**An Attention-Enhanced CNN with Explainable AI for Driver Behavior Detection in Intelligent Transportation Systems**
-
-**Journal:** *Algorithms (MDPI)*  
-**Status:** Accepted  
-**Acceptance Date:** 17 July 2026
-
----
-
-# 🎓 Teaching
-
-Current teaching areas include:
-
-- Machine Learning
-- Data Structures
-- Computer Programming
-- Artificial Intelligence
-
----
-
-# 🏆 Leadership & Academic Service
-
-- Assistant Professor, RSTU
-- Student Supervision
-- Academic Mentoring
-- Leadership Activities
-- Community Engagement
-
----
-
-# 🌍 Website Features
-
-- Responsive Design
-- Dark/Light Theme
-- Academic Portfolio
-- Publications Showcase
-- Leadership Portfolio
-- Research Highlights
-- Downloadable CV
-- GitHub Pages Deployment
-
----
-
-# 📂 Repository Structure
+## Structure
 
 ```
-.
-├── assets/
-│   ├── css/
-│   ├── files/
-│   ├── img/
-│   └── js/
-├── index.html
-├── cv.html
-├── leadership.html
-├── 404.html
-├── sitemap.xml
-├── robots.txt
-└── README.md
+index.html            Home — identity, research thesis, selected work, news, contact
+research.html         Research statement and project detail
+publications.html     Peer-reviewed record with DOI, full text and BibTeX
+teaching.html         Courses, student supervision, academic service
+cv.html               Full CV (mirrors the PDF; print stylesheet generates it)
+404.html
+assets/css/site.css   The entire stylesheet
+assets/js/site.js     Theme toggle, mobile nav, footer year — enhancement only
+assets/img/           Portrait, social card, service evidence (WebP)
+assets/files/         CV, thesis and project report PDFs
+build.py              Generates the five pages from one shared layout
 ```
 
----
+No build step is required to view the site: open `index.html` in a browser.
 
-# 🚀 Deployment
+## Editing
 
-This website is automatically deployed using **GitHub Pages**.
+`build.py` holds the navigation, header and footer once, so they cannot drift
+between pages. Edit the page content inside it and run `python3 build.py`, which
+writes `dist/`. If you edit the HTML directly instead, apply any header, nav or
+footer change to all five pages by hand.
 
-Whenever changes are committed to the `main` branch, the website is automatically updated.
+Common edits:
 
----
+- **Add a publication** — copy an `<article class="pub">` block in the
+  `PUBLICATIONS` section of `build.py`.
+- **Add news** — copy an `<article class="entry">` block in the `HOME` News section.
+- **Replace the CV** — swap `assets/files/shahidul-islam-shabuz-cv.pdf`, keeping the
+  filename, and mirror the change in the `CV` section so the page and PDF agree.
+- **Change colours** — the `:root` token block at the top of `assets/css/site.css`
+  (`--accent`, `--signal`); dark-theme values are redefined twice below it.
 
-# 📬 Contact
+## Licence
 
-**Md Shahidul Islam Shabuz**
-
-📧 Email: shahidul.shabuz@gmail.com
-
-🌐 Website: https://shahidul-shabuz.github.io/
-
-💼 LinkedIn:
-(Add your LinkedIn profile URL)
-
-💻 GitHub:
-https://github.com/shahidul-shabuz
-
----
-
-# ⭐ Citation
-
-If you find this repository useful or would like to adapt its design for your own academic website, please consider giving it a ⭐ on GitHub.
-
----
-
-# 📄 License
-
-This project is released under the MIT License.
-
-© 2026 Md Shahidul Islam Shabuz. All Rights Reserved.
+Source MIT. Text, images and documents © Md Shahidul Islam Shabuz.

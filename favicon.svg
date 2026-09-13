@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#0d5c75"/>
-  <text x="32" y="41" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="white">MS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="S">
+  <rect width="64" height="64" rx="8" fill="#0E5E58"/>
+  <g fill="none" stroke="#D9963F" stroke-width="4" stroke-linecap="square">
+    <path d="M12 20V12h8"/><path d="M52 20V12h-8"/>
+    <path d="M12 44v8h8"/><path d="M52 44v8h-8"/>
+  </g>
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="700" fill="#FFFFFF">S</text>
 </svg>
