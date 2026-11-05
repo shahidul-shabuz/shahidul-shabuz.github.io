@@ -190,8 +190,7 @@ PAPER_STATS = """<div class="stats">
 CONTACT_BAND = f"""<section class="band band-tint">
   <div class="shell">
     <div class="band-head">
-      <p class="eyebrow">Contact</p>
-      <h2>Get in touch</h2>
+      <h2>Contact</h2>
     </div>
 
     <div class="contact-grid">
@@ -267,7 +266,6 @@ HOME = f"""<section class="hero">
 <section class="band">
   <div class="shell">
     <div class="band-head">
-      <p class="eyebrow">Selected work</p>
       <h2>Research</h2>
     </div>
 
@@ -309,11 +307,19 @@ HOME = f"""<section class="hero">
 <section class="band">
   <div class="shell">
     <div class="band-head">
-      <p class="eyebrow">News</p>
-      <h2>Recent</h2>
+      <h2>News</h2>
     </div>
 
     <div class="entries">
+      <article class="entry">
+        <div class="entry-meta"><b>Nov 2026</b></div>
+        <div class="entry-body">
+          <h3>M.Sc. coursework completed</h3>
+          <p>Computer Science and Engineering, Dhaka University of Engineering &amp;
+          Technology. CGPA 4.00 out of 4.00.</p>
+        </div>
+      </article>
+
       <article class="entry">
         <div class="entry-meta"><b>Aug 2026</b></div>
         <div class="entry-body">
@@ -343,15 +349,6 @@ HOME = f"""<section class="hero">
           <p>BookCycleBD, a peer-to-peer marketplace for second-hand books, was
           completed and deployed by Md. Marzan Haque under my supervision.
           <a href="teaching.html">Project details</a>.</p>
-        </div>
-      </article>
-
-      <article class="entry">
-        <div class="entry-meta"><b>Dec 2025</b></div>
-        <div class="entry-body">
-          <h3>Began the M.Sc. in Computer Science and Engineering at DUET</h3>
-          <p>First semester completed with a CGPA of 4.00. Coursework continues
-          alongside the teaching post at RSTU.</p>
         </div>
       </article>
 
@@ -415,8 +412,7 @@ RESEARCH = f"""<section class="band">
 <section class="band">
   <div class="shell">
     <div class="band-head">
-      <p class="eyebrow">Projects</p>
-      <h2>In detail</h2>
+      <h2>Projects</h2>
     </div>
 
     <article style="border-top:1px solid var(--rule); padding-top:32px">
@@ -773,7 +769,7 @@ CV = f"""<div class="shell">
           <span class="cv-when">Dec 2025 &ndash; Present</span>
         </div>
         <p class="cv-where">Dhaka University of Engineering &amp; Technology (DUET), Gazipur, Bangladesh</p>
-        <ul><li>CGPA 4.00 / 4.00 (first semester completed).</li></ul>
+        <ul><li>CGPA: 4.00 / 4.00 (coursework completed).</li></ul>
       </div>
       <div class="cv-item">
         <div class="cv-line">
