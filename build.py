@@ -321,18 +321,6 @@ HOME = f"""<section class="hero">
       </article>
 
       <article class="entry">
-        <div class="entry-meta"><b>Aug 2026</b></div>
-        <div class="entry-body">
-          <h3>Selected for the JST Sakura Science Exchange Program</h3>
-          <p>Nominated by the Department of Computer Science and Engineering at DUET
-          for the JST Sakura Science Exchange Program 2026 at Shizuoka University,
-          Japan &mdash; one of six M.Sc. students selected on academic record, research
-          and publication experience, and fit with the host institution&rsquo;s research
-          areas. The exchange visit is planned for February 2027.</p>
-        </div>
-      </article>
-
-      <article class="entry">
         <div class="entry-meta"><b>Jul 2026</b></div>
         <div class="entry-body">
           <h3>Paper published in <em>Algorithms</em></h3>
